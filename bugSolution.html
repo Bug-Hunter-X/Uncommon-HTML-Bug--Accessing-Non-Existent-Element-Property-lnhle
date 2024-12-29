@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    var element = document.getElementById('myDiv');
+    //Check if the property exists before accessing it
+    if (element && element.hasOwnProperty('textContent')) {
+      var textContent = element.textContent; 
+      console.log(textContent);
+    } else {
+      console.log('Property does not exist or element is null.');
+    }
+  </script>
+</body>
+</html>
