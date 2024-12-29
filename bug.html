@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    //Attempting to access a non-existent property of an element
+    var element = document.getElementById('myDiv');
+    var nonExistentProperty = element.nonExistentProperty; 
+  </script>
+</body>
+</html>
