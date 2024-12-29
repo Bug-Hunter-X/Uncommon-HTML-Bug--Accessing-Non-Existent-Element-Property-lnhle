@@ -1,0 +1,1 @@
+This repository demonstrates a somewhat uncommon bug in HTML, specifically accessing a non-existent property of an HTML element. The bug.html file contains the erroneous code, while bugSolution.html offers a solution and explanation.  The bug is subtle, it may not always throw a Javascript error, but will likely result in unexpected behavior or undefined values.
